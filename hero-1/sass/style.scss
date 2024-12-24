@@ -1,0 +1,118 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "settings";
+
+body {
+    font-size: 18px;
+    font-weight: $poppins-regular;
+    color: $font-body-color;
+}
+
+h1, .hight {
+    font-family: $bebas-font;
+    color: $font-h-color;
+}
+
+h1 {
+    font-size: 87px;
+    line-height: 1.1em;
+    letter-spacing: 3px;
+    .hight {
+        color: $primary-color;
+    }
+}
+
+header {
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        font-weight: $poppins-semibold;
+        font-size: 32px;
+        color: $font-h-color;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    a {
+        text-decoration: none;
+        color: $font-h-color;
+        &:visited {
+            color: $font-h-color;
+        }
+    }
+}
+
+.hero {
+    height: auto;
+    padding: 20px 60px;
+    margin-bottom: 40px;
+
+    .hero-main {
+        width: 60%;
+        margin-bottom: 40px;
+        p {
+            font-size: 20px;
+            width: 70%;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 30px;
+        }
+    }
+
+    .hero-extra {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        text-align: center;
+        .hight {
+            font-size: 38px;
+        }
+    }
+    
+    figure {
+        position: absolute;
+        width: 55vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: $primary-color;
+        z-index: -100;
+        font-size: 0;
+        img {
+            padding: 20px 0 0 0;
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+
+.services {
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    position: relative;
+
+    article {
+        position: relative;
+        top: -30px;
+        background-color: white;
+        padding: 30px;
+
+        h3 {
+            font-weight: $poppins-medium;
+            color:$font-h-color
+        }
+    }
+}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(126, 218, 210);
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 15px 25px;
+}
+
+html * {
+  font-family: "Poppins", serif;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(144, 144, 144);
+}
+
+h1, .hight {
+  font-family: "Bebas Neue", serif;
+  color: rgb(66, 66, 65);
+}
+
+h1 {
+  font-size: 87px;
+  line-height: 1.1em;
+  letter-spacing: 3px;
+}
+h1 .hight {
+  color: rgb(126, 218, 210);
+}
+
+header {
+  padding: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  font-weight: 600;
+  font-size: 32px;
+  color: rgb(66, 66, 65);
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+header a {
+  text-decoration: none;
+  color: rgb(66, 66, 65);
+}
+header a:visited {
+  color: rgb(66, 66, 65);
+}
+
+.hero {
+  height: auto;
+  padding: 20px 60px;
+  margin-bottom: 40px;
+}
+.hero .hero-main {
+  width: 60%;
+  margin-bottom: 40px;
+}
+.hero .hero-main p {
+  font-size: 20px;
+  width: 70%;
+  margin-top: 10px;
+}
+.hero .hero-main button {
+  margin-top: 30px;
+}
+.hero .hero-extra {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  text-align: center;
+}
+.hero .hero-extra .hight {
+  font-size: 38px;
+}
+.hero figure {
+  position: absolute;
+  width: 55vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgb(126, 218, 210);
+  z-index: -100;
+  font-size: 0;
+}
+.hero figure img {
+  padding: 20px 0 0 0;
+  width: auto;
+  height: 100%;
+}
+
+.services {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  position: relative;
+}
+.services article {
+  position: relative;
+  top: -30px;
+  background-color: white;
+  padding: 30px;
+}
+.services article h3 {
+  font-weight: 500;
+  color: rgb(66, 66, 65);
+}
+
+/*# sourceMappingURL=style.css.map */
