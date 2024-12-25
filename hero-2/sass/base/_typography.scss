@@ -1,0 +1,18 @@
+html * {
+    font-family: $poppins-font;
+    font-weight: $poppins-regular;
+    font-size: $body-font-size;
+}
+
+h1 {
+    font-weight: $poppins-bold;
+    font-size: $h1-font-size;
+    color: $secondary-color;
+    line-height: $h1-line-height;
+}
+
+h3 {
+    font-weight: $poppins-bold;
+    font-size: $body-font-size;
+    color: black;
+}

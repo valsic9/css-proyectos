@@ -1,0 +1,125 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "settings";
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        nav {
+            width: 70%;
+            color: $secondary-color;
+            display: flex;
+            align-items: center;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                text-decoration: none;
+                list-style: none;
+                gap: 15px;
+                a {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+.header-right {
+    position: relative;
+    a {
+        align-self: flex-end;
+        color: $secondary-color;
+        background-color: $primary-color;
+        padding: 10px 18px;
+        position: relative;
+        z-index: 2;
+    }
+}
+}
+
+.hero {
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+    background-color: $primary-color;
+    height: auto;
+    .hero-left {
+        max-width: 52%;
+        p {
+            color: $secondary-color;
+            font-size: $hero-font-size;
+            &:first-of-type {
+                margin-bottom: 15px
+            }
+            &:last-of-type {
+                margin-bottom: 35px;
+                margin-top: 20px;
+            }
+        }
+        a {
+            color: $hero-button-font-color;
+            display: flex;
+            align-items: center;
+            max-width: fit-content;
+            background-color: $secondary-color;
+            padding: 10px 17px;
+        }
+    }
+
+    figure {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 40%;
+        max-height: 147vh;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+
+}
+
+.categories {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    max-width: 70vw;
+    max-height: max-content;
+    background-color: $secondary-color;
+    padding: 30px;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 7px;
+        padding: 20px 10px;
+
+        img {
+            width: 52px;
+        }
+
+        p {
+            color: $body-font-color;
+        }
+    }
+}
