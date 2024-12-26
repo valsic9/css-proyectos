@@ -1,0 +1,17 @@
+html {
+    body {
+        h1 {
+            font-family: $playfair-font;
+            font-weight: $playfair-font-bold;
+            font-size: $h1-font-size;
+            line-height: $h1-line-height;
+            color: $black-color;
+        }
+        h3 {
+            font-size: $h3-font-size;
+            font-weight: $poppins-font-med;
+   
+        }
+
+    }
+}

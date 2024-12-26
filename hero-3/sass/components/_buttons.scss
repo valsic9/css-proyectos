@@ -1,0 +1,15 @@
+.button {
+    padding: 16px 36px;
+    text-align: center;
+}
+
+.button-secundary {
+    color: $primary-color;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.button-primary {
+    color: white;
+    background-color: $primary-color;
+}
