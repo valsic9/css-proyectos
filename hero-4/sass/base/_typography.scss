@@ -1,0 +1,24 @@
+p, a {
+    font-size: $font-size-body;
+    font-family: $poppins-font;
+}
+
+h1 {
+    font-family: $belgrano-font;
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    color: $color-blue;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: $belgrano-font;
+    color: $color-blue;
+    font-size: $h2-font-size;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: $belgrano-font;
+    color: $color-blue;
+}

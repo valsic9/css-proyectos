@@ -1,0 +1,26 @@
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 22px;
+    font-weight: $poppins-semiBold;
+
+    &.btn-primary {
+        background-color: $color-red;
+        color: white;
+    }
+    &.btn-ghostWhite {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+
+    &.btn-link {
+        text-decoration: underline;
+        color: $color-blue;
+        font-weight: $poppins-regular
+    }
+    &.btn-ghost {
+        color: $color-red;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
