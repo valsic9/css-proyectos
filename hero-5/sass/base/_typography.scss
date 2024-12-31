@@ -1,0 +1,39 @@
+p, a {
+    font-size: 18px;
+    font-family: $body-font-family;
+    font-weight: 400;
+}
+
+.hero-container {
+    .hero-container_content {
+        h1 {
+            font-family: $h-font-family;
+            font-size: $h1-font-size;
+            font-weight: 700;
+            line-height: $h1-line-height;
+            color: $black-color;
+        }
+        p {
+            color: $grey-color;
+        }
+
+    }        
+    .hero-container_info ul {
+            li {
+                font-size: $body-font-size;
+                color: $grey-color;
+            }
+        }
+}
+
+h2, h3 {
+    font-family: $body-font-family;
+    font-size: $h2-font-size;
+    font-weight: 500;
+}
+
+.categories {
+    p {
+        color: $grey-color;
+    }
+}
