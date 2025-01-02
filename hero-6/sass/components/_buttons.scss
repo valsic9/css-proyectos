@@ -1,0 +1,37 @@
+.btn {
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: $poppins-light;
+
+    &.btn--primary {
+        background-color: $color-dark-blue;
+        color: white;
+        text-decoration: none;
+    }
+    &.btn--ghost {
+        text-decoration: underline;
+        color: $color-dark-blue;
+        font-weight: $poppins-regular;
+    }
+}
+
+.video-btn {
+    @include nav-flex;
+    gap: 10px;
+    .play--btn {
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    }        
+    a {
+        text-decoration: none;
+        color: $color-dark-blue;
+        font-size: 16px;
+    }
+}
