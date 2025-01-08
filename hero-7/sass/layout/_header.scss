@@ -1,0 +1,19 @@
+header.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    .main-nav {
+        ul {
+            @include formatList;
+            gap: 20px;
+            justify-content: center;
+            a.active {
+                color: rgba($lightBlack-color, 1);
+            }
+        }
+        
+    }
+}

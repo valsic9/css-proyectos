@@ -1,0 +1,31 @@
+p, a {
+    font-size: $body-font-size;
+    font-family: $poppins-font;
+    font-weight: $poppins-font-reg;
+    color: $lightBlack-color;
+}
+
+li {
+    a {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-family: $playfair-font;
+    font-size: $h1-font-size;
+    font-weight: $poppins-font-reg;
+    line-height: 1.2em;
+}
+
+p.numbers__hight {
+    font-size: 44px;
+    color: rgba($lightBlack-color, 1);
+}
+
+h2 {
+    font-family: $poppins-font;
+    font-size: $body-font-size;
+    font-weight: $poppins-font-reg;
+    color: rgba($lightBlack-color, 1);
+}

@@ -1,0 +1,127 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "settings";
+
+body {
+    padding-left: 70px;
+    padding-right: 70px;
+    background: rgb(169,214,192);
+    background: linear-gradient(90deg, rgba(250, 248, 245, 1) 50%, rgba(222, 218, 213, 1) 50%, rgba(222, 218, 213, 1) 100%);
+}
+
+// Main 
+.hero {
+    max-width: 50%;
+    margin-bottom: 220px;
+    h1 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 25px;
+        max-width: 93%;
+    }
+    .hero__btns {
+        @include formatList;
+        gap: 15px;
+        .btn.btn-primary {
+            &::after {
+                content: '';
+                width: 20px; 
+                height: 20px;
+                background-image: url('../img/diagonal-arrow.svg');
+                position: relative;
+                display: inline-block;
+                right: -3px;
+                top: 2px;
+            }
+        }
+        .btn.btn-ghost {
+            &::after {
+                content: '';
+                width: 20px; 
+                height: 20px;
+                background-image: url('../img/chevron.svg');
+                position: relative;
+                display: inline-block;
+                right: -3px;
+                top: 2px;
+            }
+        }
+
+        
+ 
+    }
+}
+
+.numbers {
+    max-width: 40%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    div {
+        max-width: 20%;
+        padding: 10px;
+        p {
+            
+        }
+    }
+
+}
+
+main {
+    position: relative;
+}
+.services {
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    .imgs-container {
+        display: flex;
+        gap: 40px;
+        max-height: 70%;
+        figure {
+            img {
+                height: 540px;
+                width: auto;
+            }
+            
+        }
+    }
+    .content-container {
+        display: inline-block;
+        padding: 15px 30px;
+        padding-right: 0px;
+        margin-left: auto;
+        position: relative;
+        z-index: 1;
+        background-color: $white-color;
+        .side-nav {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    a {
+                        padding: 10px;
+                        display: flex;
+                        gap:25px;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+
+                }
+            }
+        }
+    }
+
+}
