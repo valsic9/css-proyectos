@@ -12,18 +12,45 @@ body {
     padding-right: 70px;
     background: rgb(169,214,192);
     background: linear-gradient(90deg, rgba(250, 248, 245, 1) 50%, rgba(222, 218, 213, 1) 50%, rgba(222, 218, 213, 1) 100%);
+    counter-reset: my-counter;
 }
 
+
+
 // Main 
+main {
+    position: relative;
+    &::after {
+        content: '';
+        background-color: rgba(222, 218, 213, .25);
+        display: inline;
+        width: 335px;
+        height: 140px;
+        position: absolute;
+        bottom: -60px; right: 48%;
+
+    }
+}
 .hero {
     max-width: 50%;
-    margin-bottom: 220px;
+    margin-bottom: 200px;
+    position: relative;
+    &::before {
+        content: '';
+        background-color: rgba(222, 218, 213, .25);
+        display: inline;
+        width: 300px;
+        height: 75px;
+        position: absolute;
+        top: 0px; left: -20px;
+
+    }
     h1 {
         margin-bottom: 25px;
     }
     p {
         margin-bottom: 45px;
-        max-width: 93%;
+        max-width: 95%;
     }
     .hero__btns {
         @include formatList;
@@ -60,7 +87,7 @@ body {
 
 .numbers {
     max-width: 40%;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -72,10 +99,9 @@ body {
 
 }
 
-main {
-    position: relative;
-}
+
 .services {
+    max-height: 710px;
     position: absolute;
     z-index: -1;
     top: -25px;
@@ -95,32 +121,40 @@ main {
         }
     }
     .content-container {
+        width: 40%;
         display: inline-block;
         padding: 22px 30px;
-        padding-right: 0px;
         margin-left: auto;
-        position: relative;
-        right: 28px; bottom: 90px;
+        position: absolute;
+        right: 28px; bottom: -190px;
         z-index: 1;
         background-color: $white-color;
+        h2 {
+            margin-bottom: 5px;
+        }
         .side-nav {
             ol {
                 display: flex;
                 flex-direction: column;
-                list-style: decimal-leading-zero;
+                list-style: none;
                 li {
-                    margin: 0 30px;
-                    &::marker {
-                        font-family: $poppins-font;
-                        color: rgba(158, 157, 155, 1);
-                    }
                     a {
+                        box-sizing: content-box;
+                        padding: 15px 0px;
+                        text-align: start;
                         font-size: 22px;
-                        padding: 15px;
                         display: flex;
-                        gap:35px;
+                        gap:10px;
                         justify-content: space-between;
                         align-items: center;
+                        &::before {
+                            counter-increment: my-counter;
+                            content: "0" counter(my-counter);
+                            font-size: 16px;
+                        }
+                        p {
+                            width: 140px;
+                        }
                     }
                     
 
@@ -131,15 +165,8 @@ main {
 
 }
 
-.services {
-    .content-container {
-        .side-nav {
-            ol {
-                li + li {
-                    border-top: 2px solid $grey-color;
-                }
-            }
-        }
-
+.side-nav {
+    li + li {
+        border-top: 1px solid $grey-color;
     }
 }

@@ -8,7 +8,7 @@ header.header {
     .main-nav {
         ul {
             @include formatList;
-            gap: 20px;
+            gap: 28px;
             justify-content: center;
             a.active {
                 color: rgba($lightBlack-color, 1);
