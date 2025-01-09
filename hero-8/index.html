@@ -7,12 +7,16 @@
   <title>Proyecto de CSS - Header 08</title>
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="description" content="Proyecto propuesto por ConquerBlocks">
-
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <header class="header">
-  <a href="#"><img src="img/Luxe.svg" alt="logotipo"></a>
-  <nav>
+  <a href="#" class="logo"><img src="img/Luxe.svg" alt="logotipo"></a>
+  <nav class="main-nav">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Services</a></li>
@@ -25,26 +29,34 @@
   <section class="hero">
     <div class="grid-container">
       <div class="hero__content">
-        <p>Hi There!</p>
-        <h1>Luxe is here to be your assistance</h1>
-        <p>I am here ready to help you in making creative digital products</p>
+        <p class="greeting">Hi There!</p>
+        <h1><span>Luxe</span> is here to be your assistance</h1>
+        <p class="description">I am here ready to help you in making creative digital products</p>
         <a href="#" class="btn btn--primary">Let's Discuss</a>
       </div>
       <div class="hero__deco">
-        <div>
-          <img src="img/icon.svg" alt="icon">
-          <p class="hero__deco__high">2k+</p>
-          <p>Projects</p>
-        </div>
-        <div>
-          <img src="img/icon-perso.svg" alt="icon">
-          <p class="hero__deco__high">Product Designer</p>
-          <p>5 Years</p>
-        </div>
-        <div>
-          <img src="img/Star.svg" alt="icon">
-          <p class="hero__deco__high">4.8</p>
-          <p>Satisfaction</p>
+        <div class="hero__deco__content">
+          <div>
+            <img src="img/icon.svg" alt="icon" class="icon">
+            <div class="description">
+              <p class="hero__deco__high">2k+</p>
+              <p class="hero__deco__sub">Projects</p>
+            </div>
+          </div>
+          <div>
+            <img src="img/icon-perso.svg" alt="icon" class="icon">
+            <div class="description">
+              <p class="hero__deco__high">Product Designer</p>
+              <p class="hero__deco__sub">5 Years</p>
+            </div>
+          </div>
+          <div>
+            <img src="img/Star.svg" alt="icon" class="icon--star">
+            <div class="description">
+              <p class="hero__deco__high">4.8</p>
+              <p class="hero__deco__sub">Satisfaction</p>
+            </div>
+          </div>
         </div>
       </div>
   </div>

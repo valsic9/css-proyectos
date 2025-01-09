@@ -1,0 +1,14 @@
+.btn.btn--primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 24px;
+    transition: background-color ease-in, transform ease-in, box-shadow ease-in;
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px 50px rgba($grey-color, 0.25);
+    }
+}
