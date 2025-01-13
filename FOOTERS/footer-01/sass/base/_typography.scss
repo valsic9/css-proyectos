@@ -1,0 +1,22 @@
+p, a {
+    font-family: $poppins-font;
+    text-decoration: none;
+    color: $light-black-color;
+    font-size: $body-font-size;
+    font-weight: 400;
+}
+
+a:hover {
+    color: $green-color;
+}
+
+h1, h2, h3 {
+    font-family: $poppins-font;
+    color: $dark-black-color;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
