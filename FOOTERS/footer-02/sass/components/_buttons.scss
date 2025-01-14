@@ -1,0 +1,19 @@
+.btn {
+    width: 127px;
+    display: inline-block;
+    padding: 16px 24px;
+    border: 1px solid rgba(4, 5, 5, 0.32);
+    border-radius: 25px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: $green-color;
+    color: black;
+    font-weight: 600;
+    font-size: $h3-font-size;
+    &:hover {
+        background-color: white;
+        color: $green-color;
+    }
+}

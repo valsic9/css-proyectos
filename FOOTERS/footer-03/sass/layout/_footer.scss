@@ -1,0 +1,20 @@
+.footer-main {
+    .grid-container {
+        display: grid;
+        grid-template-areas:"left top top"
+                            "left bottom bottom";
+        .left {
+            grid-area: left;
+        }
+
+        .top {
+            grid-area: top;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }    
+    }
+
+
+}
