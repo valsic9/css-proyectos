@@ -5,3 +5,8 @@ p, a {
     font-weight: 400;
 }
 
+ul {
+    li a:hover {
+        color: rgba(230, 92, 0, 1);
+    }
+}

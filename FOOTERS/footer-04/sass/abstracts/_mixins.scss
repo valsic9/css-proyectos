@@ -39,3 +39,9 @@
   }
 }
 
+@mixin nav-list-reset {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+}
