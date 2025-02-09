@@ -1,0 +1,34 @@
+// Breakpoints
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+
+// Font family
+$jakarta-font: "Plus Jakarta Sans", serif;
+
+// Font sizes
+$heading-xl: 56px;
+$heading-l: 40px;
+$heading-m: 32px;
+$heading-s: 24px;
+
+$body-m: 18px;
+$body-m: 16px;
+
+// Font weights
+$heading-weight: 800;
+$body-m-weight: 500;
+$body-s-weight: 600;
+
+
+// Colors
+$light-blue-color: rgb(102, 108, 163);
+$dark-blue-color: rgb(19, 24, 63);
+$grey-color: rgb(131, 134, 154);
+$dark-pink-color: rgb(247, 71, 128);
+$light-pink-color: rgb(255, 167, 195);
+
+// Gradients
+$pink-gradient: linear-gradient(0deg, rgba(240, 42, 166) 0%, rgba(255, 111, 72) 100%);
+$blue-gradient: linear-gradient(0deg, rgba(240, 42, 166) 0%, rgba(72, 81, 255) 100%);

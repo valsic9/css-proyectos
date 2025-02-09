@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+body * {
+    font-family: $jakarta-font;
+}
+
+h1 {
+    font-size: $heading-l;
+    color: $dark-blue-color;
+    font-weight: $heading-weight;
+}
