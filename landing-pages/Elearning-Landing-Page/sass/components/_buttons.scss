@@ -4,9 +4,9 @@
     text-decoration: none;
     text-align: center;
     border-radius: 28px;
-    padding: 12px 24px;
-    font-size: $body-m;
-    font-weight: 700;
+    padding: 14px 24px;
+    font-size: $body-s;
+    font-weight: $body-s-weight;
     display: inline-block;
     color: white;
 
@@ -16,5 +16,16 @@
 
     &.btn--pink-gradient {
         background: $pink-gradient;
+    }
+
+    &.btn--link {
+        color: $dark-pink-color;
+        padding: 0px;
+        font-size: $body-s;
+        font-weight: $body-s-weight;
+    }
+
+    &.btn--blue-gradient {
+        background: $blue-gradient;
     }
 }

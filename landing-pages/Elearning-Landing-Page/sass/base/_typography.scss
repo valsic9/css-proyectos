@@ -9,3 +9,19 @@ h1 {
     color: $dark-blue-color;
     font-weight: $heading-weight;
 }
+
+h2 {
+    color: white;
+    font-size: $heading-m;
+    font-weight: $heading-weight;  
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: $heading-weight;
+}
+
+p {
+    font-size: $body-s;
+    color: $grey-color;
+}
