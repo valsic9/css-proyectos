@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .btn {
     text-decoration: none;
@@ -9,6 +10,10 @@
     font-weight: $body-s-weight;
     display: inline-block;
     color: white;
+    @include breakpoint(tablethorizontal) {
+        padding: 14px 31px;
+        font-size: $body-m;
+    }
 
     &.btn--blue {
         background-color: $dark-blue-color;
@@ -23,6 +28,10 @@
         padding: 0px;
         font-size: $body-s;
         font-weight: $body-s-weight;
+        text-align: start;
+        @include breakpoint(tablet) {
+            font-size: $body-s;
+        }
     }
 
     &.btn--blue-gradient {

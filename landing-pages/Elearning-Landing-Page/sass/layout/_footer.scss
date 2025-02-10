@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 footer.footer {
     background-color: $dark-blue-color;
@@ -7,5 +8,16 @@ footer.footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .logo {
+            width: 89px;
+            height: 35px;
+            @include breakpoint(tablethorizontal) {
+                width: 111px;
+                height: 38px;
+            }
+        }
+
+
     }
 }

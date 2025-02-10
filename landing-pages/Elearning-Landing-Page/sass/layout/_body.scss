@@ -2,11 +2,15 @@
 @use "../abstracts/mixins" as *;
 
 body {
-@include breakpoint(tablet) {
-    background-image: url('../../img/hero-img.png');
-    background-position: 130% 0%;
-    background-repeat: no-repeat;
-    background-size: 58%;
-}
+    @include breakpoint(tablet) {
+        background-image: url('../../img/hero-img.png');
+        background-position: 130% 1%;
+        background-repeat: no-repeat;
+        background-size: 58%;
+    }
+    @include breakpoint(tablethorizontal) {
+        background-size: 55%;
+        background-position: 130% -2%;        
+    }
 
 }

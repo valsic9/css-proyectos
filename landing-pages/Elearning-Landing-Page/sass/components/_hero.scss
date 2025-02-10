@@ -4,7 +4,10 @@
 .hero {
     margin-bottom: 80px;
     @include breakpoint(tablet) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    @include breakpoint(tablethorizontal) {
+        margin-bottom: 190px;
     }
     .container {
         @include breakpoint(tablet) {
@@ -73,6 +76,10 @@
                         top: -50px;
                         right: -310px;
                     }
+                    @include breakpoint(tablethorizontal) {
+                        top: -80px;
+                        right: -410px;
+                    }
                 }
                 &.n2 {
                     left: 25px;
@@ -82,7 +89,11 @@
                     height: 100px;
                     @include breakpoint(tablet) {
                         left: -15px;
-                        bottom: 90px;
+                        bottom: 20%;
+                    }
+                    @include breakpoint(tablethorizontal) {
+                        left: 10px;
+                        bottom: -20%;
                     }
                 }
             }

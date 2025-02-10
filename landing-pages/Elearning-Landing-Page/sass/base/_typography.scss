@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 body * {
     font-family: $jakarta-font;
@@ -8,20 +9,33 @@ h1 {
     font-size: $heading-l;
     color: $dark-blue-color;
     font-weight: $heading-weight;
+    @include breakpoint(tablethorizontal) {
+        font-size: $heading-xl;
+    }
+
 }
 
 h2 {
     color: white;
     font-size: $heading-m;
     font-weight: $heading-weight;  
+    @include breakpoint(tablethorizontal) {
+        font-size: $heading-l
+    }
 }
 
 h3 {
     font-size: 20px;
     font-weight: $heading-weight;
+    @include breakpoint(tablethorizontal) {
+        font-size: $heading-s
+    }
 }
 
 p {
     font-size: $body-s;
     color: $grey-color;
+    @include breakpoint(tablethorizontal) {
+        font-size: $body-m
+    }
 }

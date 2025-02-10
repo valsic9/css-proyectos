@@ -14,9 +14,18 @@ header.header {
             padding-top: 24px;
             padding-bottom: 24px;
         }
+        @include breakpoint(tablethorizontal) {
+            margin-bottom: 80px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
         .logo {
             width: 89px;
             height: 35px;
+            @include breakpoint(tablethorizontal) {
+                width: 111px;
+                height: 38px;
+            }
         }
     }
 
