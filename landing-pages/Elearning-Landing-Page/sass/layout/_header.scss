@@ -1,11 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 header.header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-bottom: 20px;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        @include breakpoint(tablet) {
+            margin-bottom: 60px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
         .logo {
             width: 89px;
             height: 35px;

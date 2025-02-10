@@ -1,8 +1,21 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .hero {
     margin-bottom: 80px;
+    @include breakpoint(tablet) {
+        margin-bottom: 20px;
+    }
     .container {
+        @include breakpoint(tablet) {
+            display: flex;
+            height: 50vh;
+        }
+        .hero__content {
+            @include breakpoint(tablet) {
+                max-width: 56%;
+            }
+        }
         h1 {
             margin-bottom: 26px;
         }
@@ -19,9 +32,15 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            img {
+            @include breakpoint(tablet) {
+                height: 100%;
+            }
+            .hero__img-mobile {
                 width: 253px;
                 height: 253px;
+                @include breakpoint(tablet) {
+                    display: none;
+                }
             }
 
             .numbers {
@@ -48,11 +67,23 @@
                     top: -20px;
                     right: 35px;
                     box-shadow: 10px 10px 34px 0px rgba($dark-blue-color, 0.3);
+                    width: 105px;
+                    height: 100px;
+                    @include breakpoint(tablet) {
+                        top: -50px;
+                        right: -310px;
+                    }
                 }
                 &.n2 {
-                    left: 40px;
+                    left: 25px;
                     bottom: -20px;
                     box-shadow: -10px 10px 34px 0px rgba($dark-blue-color, 0.3);
+                    width: 155px;
+                    height: 100px;
+                    @include breakpoint(tablet) {
+                        left: -15px;
+                        bottom: 90px;
+                    }
                 }
             }
         }

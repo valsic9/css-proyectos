@@ -1,10 +1,18 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .courses {
     background: linear-gradient(0deg, rgba(240,241,255,1) 0%, rgba(252,253,255,1) 100%);
     .container {
         display: grid;
         gap: 45px;
+        @include breakpoint(tablet) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            row-gap: 20px;
+            column-gap: 10px;
+        }
         .courses__header {
             background: $pink-gradient;
             padding: 34px 28px;

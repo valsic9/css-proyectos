@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+body {
+@include breakpoint(tablet) {
+    background-image: url('../../img/hero-img.png');
+    background-position: 130% 0%;
+    background-repeat: no-repeat;
+    background-size: 58%;
+}
+
+}
