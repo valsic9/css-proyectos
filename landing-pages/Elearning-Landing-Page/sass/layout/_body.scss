@@ -12,5 +12,13 @@ body {
         background-size: 55%;
         background-position: 130% -2%;        
     }
+    @include breakpoint(desktop) {
+        background-size: 58%;
+        background-position: 120% -8%;        
+    }
+    @include breakpoint(desktopxl) {
+        background-size: 58%;
+        background-position: 120% -11%;        
+    }
 
 }

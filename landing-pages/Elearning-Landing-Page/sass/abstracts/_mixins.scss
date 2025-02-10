@@ -25,3 +25,8 @@
     }
   }
 }
+
+@mixin btnHoverTranslate {
+  transform: translate(-3px, -3px);
+  animation: translate 1s 0s ease-in;
+}

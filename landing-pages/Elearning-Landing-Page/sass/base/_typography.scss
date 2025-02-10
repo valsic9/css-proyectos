@@ -20,7 +20,10 @@ h2 {
     font-size: $heading-m;
     font-weight: $heading-weight;  
     @include breakpoint(tablethorizontal) {
-        font-size: $heading-l
+        font-size: $heading-l;
+    }
+    @include breakpoint(desktop) {
+        font-size: $heading-m;
     }
 }
 
